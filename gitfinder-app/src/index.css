@@ -56,3 +56,39 @@ code {
   background-color:black;
   transition: 1s;
 }
+
+.right-container{
+  margin-left: auto;
+}
+
+.home-title{
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.notfound-title{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.back-to-home-button{
+  background-color: rgb(0, 0, 210);
+  width: 240px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 210);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+.back-to-home-button-icon{
+  margin-inline: 10px;
+}

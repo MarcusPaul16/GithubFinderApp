@@ -11,16 +11,17 @@ function Navbar({title}) {
          <Link style={{textDecoration : 'none'}}to='/'>
             <h1 className='title '>{title}</h1>
          </Link>
-         <button className='title-button'>
+         <div className="right-container">
+          <button className='title-button'>
             <Link to='/' style={{textDecoration : 'none'}}>
               <h1 className='title'>Home</h1>
             </Link>
-         </button>
+          </button>
          <button className='title-button'>
             <Link to='/about' style={{textDecoration : 'none'}}>
               <h1 className='title'>About</h1>
             </Link>
-         </button>
+         </button></div>
     </nav>
   )
 }
