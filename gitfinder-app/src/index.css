@@ -8,9 +8,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(38, 38, 38);
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar{
+  background-color: rgba(25, 25, 170, 0.4);
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+}
+
+.title{
+  padding-inline: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 600px) {
+  .navbar{
+    padding: 20px;
+  }
+}
+
+.github-icon{
+  font-size: 50px;
+  color: white;
+}
+
+.title-button{
+  background-color: black;
+  border: 1px solid rgba(25, 25, 170, 0.4);
+  border-radius: 10px;
+  text-decoration: none;
+  margin-inline: 20px;
+}
+
+.title-button:hover{
+  background-color:black;
+  transition: 1s;
 }

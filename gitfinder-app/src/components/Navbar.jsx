@@ -6,8 +6,21 @@ import PropTypes from 'prop-types'
 
 function Navbar({title}) { 
   return (
-    <nav className='navbar bg-neutral shadow-lg mb-12 text-neutral-content'>
-        navbar
+    <nav className='navbar'>
+      <FaGithub  className='github-icon'/>
+         <Link style={{textDecoration : 'none'}}to='/'>
+            <h1 className='title '>{title}</h1>
+         </Link>
+         <button className='title-button'>
+            <Link to='/' style={{textDecoration : 'none'}}>
+              <h1 className='title'>Home</h1>
+            </Link>
+         </button>
+         <button className='title-button'>
+            <Link to='/about' style={{textDecoration : 'none'}}>
+              <h1 className='title'>About</h1>
+            </Link>
+         </button>
     </nav>
   )
 }
