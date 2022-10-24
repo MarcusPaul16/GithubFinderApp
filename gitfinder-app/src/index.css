@@ -22,7 +22,7 @@ code {
   height: 30px;
   padding: 10px;
   display: flex;
-  justify-content:start;
+  justify-content:flex-start;
   align-items: center;
 }
 
@@ -91,4 +91,22 @@ code {
 }
 .back-to-home-button-icon{
   margin-inline: 10px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.grid-container > h3{
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.loading-title{
+  color: white;
+  font-size: 4rem;
+  text-align: center;
 }
