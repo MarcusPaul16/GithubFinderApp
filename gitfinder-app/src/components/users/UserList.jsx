@@ -4,9 +4,10 @@ import UserItem from './UserItem';
 import GithubContext, { GithubProvider } from '../../context/github/GithubContext';
 
 function UserList() {
-    const {users, loading, fetchUsers} = useContext(GithubContext)
+    const {users, loading, searchUsers} = useContext(GithubContext)
+    debugger;
     useEffect(() => {
-        fetchUsers()
+       // fetchUsers()
     }, [])
     if (!loading){
         return (
