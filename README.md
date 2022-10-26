@@ -10,7 +10,9 @@ I created this application to make it easier to search for users and their repos
 
 ![image](https://user-images.githubusercontent.com/75567560/198133942-35abb028-7a26-4821-bc5a-26ad4c4854fa.png)
 
+	To view a user's profile, you must click on "View profile", and then you will be redirected to a new page that contains information about the user.
 
+![image](https://user-images.githubusercontent.com/75567560/198135235-c0652a89-7cfb-40ba-9614-2e45ddf20b4f.png)
 
 
 
