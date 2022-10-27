@@ -191,3 +191,73 @@ code {
   margin-right: 25px;
 }
 
+.user-card-container{
+  display: flex;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.image-container{
+  position:relative;
+}
+
+.user-name-title-image{
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  font-size: 26px;
+  color: white;
+}
+
+.username-title{
+  color:  white;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.info-container{
+  margin-inline: 30px;
+}
+
+.user-bio{
+  color: white;
+  font-size: 18px;
+}
+
+.user-stats-container{
+  margin-top: 2%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  box-shadow: 5px 5px 5px gray;
+  width: 75%;
+}
+
+.user-container{
+  display: grid;
+  grid-template-columns: 1 100%;
+  grid-template-rows: 2 100%;
+}
+
+.user-image{
+  width: 350px;
+  filter: brightness(40%);
+  box-shadow: 20px 20px 50px white;
+}
+
+.stats-title{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.stats-value{
+  font-size: 48px;
+  color: white;
+  margin-top: 0;
+}
+
+.stat-container{
+  display: grid;
+  row-gap: -50px;
+}
