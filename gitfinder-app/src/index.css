@@ -17,7 +17,7 @@ code {
 
 .navbar{
   background-color: #190027;
-  height: 30px;
+  height: 40px;
   padding: 10px;
   display: flex;
   justify-content:flex-start;
@@ -36,6 +36,7 @@ code {
     padding: 20px;
   }
 }
+
 
 .github-icon{
   font-size: 50px;
@@ -92,14 +93,25 @@ code {
 }
 
 .grid-container{
-  margin-top: 5%;
   width: 75%;
+  margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   column-gap: 1rem;
   row-gap: 1rem;
   margin-inline: auto;
   justify-content: center;
+}
+
+@media screen and (max-width: 1400px){
+  .grid-container{
+    grid-template-columns: repeat(3, 25%);
+  }
+}
+@media screen and (max-width: 1000px){
+  .grid-container{
+    grid-template-columns: repeat(2, 25%);
+  }
 }
 .grid-container > h3{
   text-align: center;
@@ -114,6 +126,7 @@ code {
 }
 
 .user-item-container{
+  inline-size: 300px;
   position: relative;
   background-color: white;
   height: 90px;
@@ -191,6 +204,10 @@ code {
   margin-right: 25px;
 }
 
+.clear-button{
+  width: 200px;
+}
+
 .user-card-container{
   display: flex;
   margin-top: 5%;
@@ -216,21 +233,24 @@ code {
 }
 
 .info-container{
-  margin-inline: 30px;
+  margin-inline: 50px;
 }
 
 .user-bio{
   color: white;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .user-stats-container{
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: 5%;
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  box-shadow: 5px 5px 5px gray;
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid #352560;
+  border-radius: 10px;
   width: 75%;
+  background-color: white;
+  color: black;
 }
 
 .user-container{
@@ -241,23 +261,75 @@ code {
 
 .user-image{
   width: 350px;
-  filter: brightness(40%);
-  box-shadow: 20px 20px 50px white;
+  filter: brightness(75%);
+  box-shadow: 20px 20px 50px 20px #2a1d4c;
+  border-radius: 10px;
 }
 
 .stats-title{
   font-size: 20px;
-  color: white;
+  color: black;
   margin-bottom: 0;
 }
 
 .stats-value{
   font-size: 48px;
-  color: white;
+  color: #352560;
   margin-top: 0;
 }
 
 .stat-container{
   display: grid;
   row-gap: -50px;
+}
+
+
+.repo-item-container{
+  display: grid;
+  width: 60%;
+  margin-inline: auto;
+  background-color: white;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  padding: 20px 50px 20px 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.url-link{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.url-link:visited{
+  color: black;
+  text-decoration: none;
+}
+
+.repo-title{
+  font-weight: 900;
+  font-size: 32px;
+  color: #352560;
+}
+
+.language{
+  font-size: 24px;
+}
+
+.code-icon{
+  font-size: 200px;
+  color: white;
+}
+
+.about-title{
+  color: white;
+  text-align: center;
+
+}
+.about-container{
+  margin-inline: auto;
+  padding-top: 10%;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1 100%;
+  justify-items: center;
 }

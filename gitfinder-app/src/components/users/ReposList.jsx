@@ -1,10 +1,11 @@
 import React from 'react'
+import RepoItem from './RepoItem'
 
 function ReposList({repos}) {
   return (
     <div>
         {repos.map((repo) =>(
-            <h3>{repo.name}</h3>
+            <RepoItem name={repo.name} url={repo.svn_url} language={repo.language}/>
         ))}
     </div>
   )

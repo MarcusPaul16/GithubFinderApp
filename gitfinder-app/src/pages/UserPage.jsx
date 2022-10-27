@@ -18,8 +18,7 @@ function UserPage() {
   },[])
 
   const {name, avatar_url, bio, login, followers, following, public_repos} = user
-
-
+  
   return (
     <div className='user-container'>
       <div className='user-card-container'>
